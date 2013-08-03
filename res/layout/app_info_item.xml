@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/item"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_app_info_item"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_app_info_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_app_info_item"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_app_info_item"
+        android:text="cn.my.myapp"
+        android:textColor="#000000"
+        android:textSize="@dimen/test" />
+
+    <TextView
+        android:id="@+id/tv_app_info_item_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_app_info_item_name"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_app_info_item"
+        android:text="cn.my.myapp"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btn_app_info_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_app_info_item_version"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:text="卸 载" />
+
+</RelativeLayout>
